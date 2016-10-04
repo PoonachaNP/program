@@ -37,8 +37,12 @@ namespace ConsoleApplication11
                         case 1:
                             {
                                 Console.WriteLine("entr no");
+                                
                                 rollno = int.Parse(Console.ReadLine());
-                                Console.WriteLine("enr name");
+                                
+              
+
+                                    Console.WriteLine("enr name");
                                 name = Console.ReadLine();
                                 Console.WriteLine("ent clas");
                                 clas = Console.ReadLine();
@@ -53,7 +57,7 @@ namespace ConsoleApplication11
                             }
                         case 2:
                             {
-                                x.CommandText = "SELECT * FROM Table_1";
+                                x.CommandText = "Select * FROM Table_1";
                                 dr = x.ExecuteReader();
                                 Console.WriteLine("Rol no \t Name \t Class \t Age");
                                 while (dr.Read())
@@ -86,9 +90,9 @@ namespace ConsoleApplication11
                 }
             }
 
-            catch (Exception e)
+            catch (Exception p)
             {
-                Console.WriteLine("an unknown erroe" + e);
+                Console.WriteLine("an unknown erroe" + p);
             }
             Console.ReadKey();
                     }
